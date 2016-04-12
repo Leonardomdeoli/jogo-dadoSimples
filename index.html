@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+  <html lang="pt-br" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JOGO DA MÉMORIA</title>
+    <link rel="stylesheet" href="vendor/twitter/bootstrap3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css"/>  
+  </head>
+  <body>
+  <div class="background"></div>
+  <div class="container" ng-controller="memoria">
+      <div class="row ">
+        <div class="row ">
+          <h1 class="text-center">JOGO DE DADO</h1>
+        </div>
+        <div class="col-md-12">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="well">
+                  <img ng-src="{{imagem}}" class="dado"/>
+                </div>
+                <div class="well">
+                  <button class="btn btn-default margin" type="submit"  ng-click="jogo()">Girar o dado</button>
+                </div>
+              </div>
+        </div>
+      </div>
+</div>
+
+    <script src="public/js/angular/angular.min.js"></script>
+    <script src="public/js/jquery/jquery-1.12.1.min.js"></script>
+    <script src="vendor/twitter/bootstrap3.3.6/js/bootstrap.min.js"></script>
+    <script src="public/js/angular/config.js"></script>
+    <script src="public/js/angular/controllers/controllers.js"></script>
+  </body>
+  </html>
+ 
